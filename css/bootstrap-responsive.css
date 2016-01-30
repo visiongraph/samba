@@ -870,6 +870,8 @@
 @media only screen and (min-width : 767px) and (max-width : 1024px)
 =====================================================================*/
 @media only screen and (min-width : 767px) and (max-width : 1024px) {
+	
+	#fototitu{ margin-top:120px;}
 	.container,
 	.navbar-static-top .container,
 	.navbar-fixed-top .container,
@@ -986,7 +988,13 @@
 @media only screen and (min-width : 500px) and (max-width : 766px)
 =====================================================================*/
 @media only screen and (min-width : 500px) and (max-width : 766px) {
-
+	#fototitu{ margin-top:220px;}
+	#titulo{
+	visibility:hidden;
+	}
+#fotoimage{
+	visibility:hidden;
+	}
 	.container,
 	.navbar-static-top .container,
 	.navbar-fixed-top .container,
@@ -1154,6 +1162,12 @@
 @media only screen and (min-width : 310px) and (max-width : 499px)
 =====================================================================*/
 @media only screen and (min-width : 310px) and (max-width : 499px) {
+		#titulo{
+	visibility:hidden;
+	}
+	#fotoimage{
+	visibility:hidden;
+	}
 	.container,
 	.navbar-static-top .container,
 	.navbar-fixed-top .container,

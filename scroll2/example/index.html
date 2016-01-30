@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <title>Scrolly: a simple jQuery parallax plugin</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" />
+        <h1>Scrolly: a simple jQuery parallax plugin</h1>
+    </header>
+
+    <section id="bottle">
+        <article>
+        <h1>Our products are a load of rubbish.</h1>   
+        <p><strong>NIKE FREE TR FIT</strong>
+        Each Nike 2010 World Championship Football jersey is made entirely from recycled polyester. That's up to eight recycled plastic bottles per jersey. In total, that diverted nearly 13 million plastic bottles from landfills. Yes, you read right. 13 million. Plastic. Bottles.</p>    
+        </article>
+        <div class="parallax" data-velocity="-.3"></div>
+    </section>
+    <section id="story-freext">
+        <article>
+        <h1>One shoe does good,
+            the other shoe kicks ass.</h1>   
+        <p><strong>NIKE FREE TR FIT</strong>
+        The Free TR Fit is designed with a lower environmental impact using
+        environmentally preferred rubber, water-based cementing and recycled polyester.
+        That means every step in the multi-directional flex groove outsole replicates
+        the foot's natural movement and helps women get more out of their workout without
+        leaving a huge environmental footprint. Everyone's a winner.</p>    
+        </article>
+        <div class="parallax" data-velocity="-.1"></div>
+        <div class="parallax" data-velocity="-.5" data-fit="525"></div>
+    </section>
+    <section></section>
+</header>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="../jquery.scrolly.js"></script>
+<script>
+    $(document).ready(function(){
+       $('.parallax').scrolly({bgParallax: true});
+    });
+</script>
+
+<script type="text/javascript">
+		$(function() {
+			$('.slide').each(function(){
+				if ($(this).index() > 0){
+					$(this).css({"position":"absolute", "top":$(this).index() * 100 + "vh"});
+				}
+			});
+			
+			$(window).scroll(function() {
+				var window_pos = window.pageYOffset;
+				$('.slide').each(function(){
+				
+				//Set the fixed position on slides when we scroll past them.
+				if ($(this).index() > 0){
+					$(this).css({"position":"absolute", "top":$(this).index() * 100 + "vh"});
+					if(window_pos > $(this).offset().top) {
+					   $(this).css({"position":"fixed", "top":"0"});
+					}
+				}
+				});
+			});
+		});
+	</script>
+    
+    <div id="one" class="slide">
+			<div class="content">
+				<span class="bigText">These slides will stack <b>on top of each other.</b></span>
+			</div>
+		</div>
+		
+		<div id="two" class="slide gray">
+			<div class="content">
+				<span class="bigText">Creating a really <b>nice effect</b></span>
+			</div>
+		</div>
+		
+		<div id="three" class="slide gray">
+			<div class="content">
+				<span class="bigText">You can have as many <b>slides</b></span>
+				<span class="bigText">as you want</span>
+			</div>
+		</div>
+        <link rel="stylesheet" href="../../scroll1/stylesheets/base.css" />
+	<link rel="stylesheet" href="../../scroll1/stylesheets/layout.css" />
+	<link rel="stylesheet" href="../../scroll1/stylesheets/shi_default.min.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+</body>
+</html>

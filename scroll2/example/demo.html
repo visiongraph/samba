@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>Scrolly: a simple jQuery parallax plugin</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ 
+
+    <header>
+  <section>    
+   
+   <div id="one" class="slide">
+			<div class="content">
+				<span class="bigText"><img src="img/img-newyork.png" width="940" height="231"></span>
+			</div>
+		</div></section>
+    </header>
+    
+    
+    
+   
+  
+    <section id="story-freext">
+        <article>
+        <div id="circle1">academy<br>
+<br>
+Our expert music and dance instructors are available for workshops and residencies all over the world for groups of all levels!
+        
+        </div>
+        <div id="circle2">Socializing:<br>
+
+
+Join a fun and inclusive community of Brazilian music enthusiasts.
+<br><br>
+
+
+Performing for fun:<br>
+
+
+Become a member of our Bateria — a high energy drum and percussion ensemble that animates many of the City's most exciting parades and events.<br><br>
+
+
+
+Professional opportunities:<br>
+
+
+Participate in a rigorous percussion training program and audition to become a member of our professional Show Group.<br>
+<br>
+</div>
+        <div id="circle3">TAKE A CLASS</div>
+          
+        </article>
+        <div class="parallax" data-velocity="-.1"></div>
+        <div class="parallax" data-velocity=".5" data-fit="-325"></div>
+    </section>
+  
+</header>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="../jquery.scrolly.js"></script>
+<script>
+    $(document).ready(function(){
+       $('.parallax').scrolly({bgParallax: true});
+    });
+</script>
+
+<script type="text/javascript">
+		$(function() {
+			$('.slide').each(function(){
+				if ($(this).index() > 0){
+					$(this).css({"background-image":"url(/img/fondo-newyork.jpg)","position":"relative", "top":$(this).index() * 500 + "vh"});
+				}
+			});
+			
+			$(window).scroll(function() {
+				var window_pos = window.pageYOffset;
+				$('.slide').each(function(){
+				
+				//Set the fixed position on slides when we scroll past them.
+				if ($(this).index() > 0){
+					$(this).css({"position":"absolute", "top":$(this).index() * 100 + "vh"});
+					if(window_pos > $(this).offset().top) {
+					   $(this).css({"position":"fixed", "top":"0"});
+					}
+				}
+				});
+			});
+		});
+	</script>
+    
+
+		
+		
+        <link rel="stylesheet" href="../../scroll1/stylesheets/base.css" />
+	<link rel="stylesheet" href="../../scroll1/stylesheets/layout.css" />
+	<link rel="stylesheet" href="../../scroll1/stylesheets/shi_default.min.css" />
+
+
+
+</body>
+</html>
