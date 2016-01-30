@@ -810,24 +810,78 @@ jQuery('document').ready(function(){
                
                 
                 <div class="span12" >
-              <h5 class="titulos" > 
-              <br>
-              <br>Under Construction</h5>
-              <div class="skepost-meta clearfix">
-                <div class="menu-meta-center"> </div>
-              </div>
-              <!-- skepost-meta -->
-              
-              <div class="skepost clearfix menu-meta-center">
-                <p class=" ">  <br>
-              <br>
-              <img src="images/merchan/coming-soon.png" > </p>
-                <br>
-              <br>
-                        <br>
-           
+             
+             
+             
+             <div class="page-content fullwidth-temp">
+	<div class="container post-wrap">
+		<div class="row-fluid">
+			<div id="content" class="span12">
+				<div class="post" id="post-164">
+					<div class="skepost">
+							<script type="text/javascript">
+		jQuery('document').ready(function(){
+		  jQuery('#sktana_container1').sketchtab({itemno:'1',orient:'v',effect:1});
+	    });
+    </script>
+	<script type="text/javascript">
+		jQuery('document').ready(function(){
+		  jQuery('#viewsource30').sketchtoggle({state:'close',effect:1});
+	    });
+    </script>
+	<script type="text/javascript">
+		jQuery('document').ready(function(){
+		  jQuery('#ske_alicontainer').sketchtab({itemno:'1',orient:'h',effect:1});
+	    });
+    </script>
+	<script type="text/javascript">
+		jQuery('document').ready(function(){
+		  jQuery('#viewsource31').sketchtoggle({state:'close',effect:1});
+	    });
+    </script>
+<div class="page-container clearfix">
+<h3 class="head-space">Vertical Tab</h3>
+<div id="sktana_container1">
+<ul class="ske_tabs clearfix">
+<li><a href="javascript:void(0);">Tab1</a></li>
+<li><a href="javascript:void(0);">Tab2</a></li>
+<li><a href="javascript:void(0);">Tab3</a></li>
+<li><a href="javascript:void(0);">Tab4</a></li>
+</ul>
+<div class="ske_tab_container">
+<div class="ske_tab_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hendrerit non sed ligula. Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla. Aenean id felis sed ligula volutpat consectetur.</div>
+<div class="ske_tab_content">Donec ut sem sit amet augue faucibus lacinia in ac neque. Aliquam laoreet neque vel lorem consectetur lobortis. Ut non bibendum metus. Etiam tristique fermentum purus, sit amet adipiscing sem blandit non. Duis ut ante dui, sed fermentum ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+<div class="ske_tab_content">Ut gravida hendrerit erat, a pellentesque dolor mattis et. Donec ligula diam, luctus id dapibus ac, egestas eu risus. Curabitur eget leo nisl. Nulla ac dapibus mi. Morbi enim nulla, porttitor ac vestibulum et, scelerisque eu justo. Mauris sit amet ornare est. Duis rhoncus lacinia sodales. Pellentesque sit amet ultrices odio.
+</div>
+<div class="ske_tab_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor imperdiet vehicula. Proin egestas diam ac mauris molestie hendrerit. Quisque nec nisi tortor. Etiam at mauris sit amet magna suscipit hendrerit non sed ligula. Vivamus purus odio, mollis ut sagittis vel, feugiat et nulla. Aenean id felis sed ligula volutpat consectetur.</div><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+</div>
+</div>
 
-                
+													
+					</div>
+					<!-- skepost -->
+				</div>
+				<!-- post -->
+
+											</div>
+			<!-- content --> 
+		</div>
+	</div>
+</div>
+
+             
+             
+             
+             
+             
+             
                  
               </div>
               <!-- skepost --></div>
