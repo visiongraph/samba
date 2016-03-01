@@ -34,7 +34,7 @@ a.large-button {font-size: 18px;line-height: 29px;}
 
 /*-- BLOCKQUOTE STYLE
 ------------------------------------------*/
-blockquote.sketch-quote{  background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;border-left: 6px solid #7FBF00; border-radius: 0; color: #7FBF00; font-size: 14px; font-weight: 300; margin: 0 0 20px 0px; padding: 10px 15px 10px 18px !important; word-spacing: 1px;} 	
+blockquote.sketch-quote{  background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;border-left: 6px solid #36b34a; border-radius: 0; color: #36b34a; font-size: 16px; font-weight: 300; margin: 0 0 20px 0px; padding: 10px 15px 10px 18px !important; word-spacing: 1px;} 	
 blockquote.sketch-quote a{text-decoration:none;}
 
 /*-- SKETCH TOOLTIP STYLE
@@ -157,42 +157,42 @@ blockquote.sketch-quote a{text-decoration:none;}
 /*-- SKETCH HORIZINTAL TABBER 
 ------------------------------------------*/
 .ske_tab_h{overflow:hidden;}
-.ske_tab_h ul.ske_tabs { margin: 0 !important; padding: 0;list-style: none;border-bottom:1px solid #DDDDDD;} 
+.ske_tab_h ul.ske_tabs { margin: 0 !important; padding: 0;list-style: none;border-bottom:1px solid rgba(127,191,0,.2);} 
 .ske_tab_h ul.ske_tabs li {   border-top: 3px solid rgba(0, 0, 0, 0);float: left;  margin-bottom: 0px; margin-left: 0; padding: 0;line-height: 31px; margin-bottom: -1px; overflow: hidden; position: relative; } 
-.ske_tab_h ul.ske_tabs li a {color: #111111;border-color: #DDDDDD; text-decoration: none;  cursor: pointer; display: block; line-height: 34px;  padding: 0 20px; position: relative;  width: auto;outline: none;} 
+.ske_tab_h ul.ske_tabs li a {color: #111111;border-color: rgba(127,191,0,.2); text-decoration: none;  cursor: pointer; display: block; line-height: 34px;  padding: 0 20px; position: relative;  width: auto;outline: none;} 
 .ske_tab_h ul.ske_tabs li a:hover {} 	
-.ske_tab_h  ul.ske_tabs li.active {border-radius: 2px;margin-bottom: -1px; background: none repeat scroll 0 0 #fff; border-top-color: #63B1BE;border-bottom: 0 none; color: #686868;border-top: 3px solid #7FBF00;  padding-top: 0;   position: relative;} 
-.ske_tab_h  ul.ske_tabs li.active a{color: #353535;border:1px solid #DDDDDD;border-top:none; border-bottom:none;}
-.ske_tab_h  .ske_tab_container { border-radius: 2px; background: none repeat scroll 0 0 #fff;display: block;  list-style: none outside none;  margin: 0 0 20px; padding: 20px;color:#777777;border:1px solid #DDDDDD;	border-top:none; } 
+.ske_tab_h  ul.ske_tabs li.active {border-radius: 2px;margin-bottom: -1px; background: none repeat scroll 0 0 #fff; border-top-color: #63B1BE;border-bottom: 0 none; color: #686868;border-top: 3px solid #36b34a;  padding-top: 0;   position: relative;} 
+.ske_tab_h  ul.ske_tabs li.active a{color: #353535;border:1px solid rgba(127,191,0,.2);border-top:none; border-bottom:none;}
+.ske_tab_h  .ske_tab_container { border-radius: 2px; background: none repeat scroll 0 0 #fff;display: block;  list-style: none outside none;  margin: 0 0 20px; padding: 20px;color:#777777;border:1px solid rgba(127,191,0,.2);	border-top:none; } 
 .ske_tab_h  .ske_tab_content { position:relative;}
 
 /*-- SKETCH VERTICAL TABBER 
 ------------------------------------------*/
 .ske_tab_v{overflow:hidden;}
-.ske_tab_v ul.ske_tabs { left: 1px;position:relative; margin: 0; padding: 0; float: left; list-style: none;border-right:1px solid #DDDDDD; width: 20%; } 
+.ske_tab_v ul.ske_tabs { left: 1px;position:relative; margin: 0; padding: 0; float: left; list-style: none;border-right:1px solid rgba(127,191,0,.2); width: 20%; } 
 .ske_tab_v ul.ske_tabs li {  border-left: 3px solid rgba(0, 0, 0, 0);margin-left: 0;margin-bottom: -1px; padding: 0;line-height: 31px; margin-right: -1px; overflow: hidden; position: relative; } 
-.ske_tab_v ul.ske_tabs li a { color: #111111;border-color: #DDDDDD;text-decoration: none;  cursor: pointer; display: block; line-height: 34px;  padding: 0 20px; position: relative;  width: auto;outline: none;} 
+.ske_tab_v ul.ske_tabs li a { color: #111111;border-color: rgba(127,191,0,.2);text-decoration: none;  cursor: pointer; display: block; line-height: 34px;  padding: 0 20px; position: relative;  width: auto;outline: none;} 
 .ske_tab_v ul.ske_tabs li a:hover { } 	
-.ske_tab_v  ul.ske_tabs li.active{  border-radius: 2px;background: none repeat scroll 0 0 #ffffff; border-left-color: #63B1BE;border-bottom: 0 none; color: #686868;border-left: 3px solid #7FBF00;  padding-top: 0;   position: relative;}
-.ske_tab_v  ul.ske_tabs li.active a{color:#353535;border:1px solid #DDDDDD;border-left:none; border-right:none;}
-.ske_tab_v  .ske_tab_container {  border-radius: 2px;float: left; width:72.3%; background: none repeat scroll 0 0 #FFFFFF;display: block;  list-style: none outside none;  margin: 0 0 20px; padding: 20px;color:#353535;border:1px solid #DDDDDD;	overflow:hidden;min-height: 93px;} 
+.ske_tab_v  ul.ske_tabs li.active{  border-radius: 2px;background: none repeat scroll 0 0 #ffffff; border-left-color: #63B1BE;border-bottom: 0 none; color: #686868;border-left: 3px solid #36b34a;  padding-top: 0;   position: relative;}
+.ske_tab_v  ul.ske_tabs li.active a{color:#353535;border:1px solid rgba(127,191,0,.2);border-left:none; border-right:none;}
+.ske_tab_v  .ske_tab_container {  border-radius: 2px;float: left; width:72.3%; background: none repeat scroll 0 0 #FFFFFF;display: block;  list-style: none outside none;  margin: 0 0 20px; padding: 20px;color:#353535;border:1px solid rgba(127,191,0,.2);	overflow:hidden;min-height: 93px;} 
 .ske_tab_v  .ske_tab_content {position:relative;}
 
 /*-- SKETCH TOGGLE STYLE
 ------------------------------------------*/
 .sketch_container,.sketch_container1{width:400px;border:1px solid #ddd;padding:1px;margin:30px;}
- h3.ske_tog_title{ border-radius:2px; background: url("../images/plus.png") no-repeat scroll 99% center #FBFBFB;border-color: #DDDDDD; border-style: solid; border-width: 1px; color: #666;cursor: pointer;font-size: 19px;padding: 8px 40px 8px 12px;margin: 0 !important;font-family: 'Muli',sans-serif;}
+ h3.ske_tog_title{ border-radius:2px; background: url("../images/plus.png") no-repeat scroll 99% center #FBFBFB;border-color: rgba(127,191,0,.2); border-style: solid; border-width: 1px; color: #666;cursor: pointer;font-size: 19px;padding: 8px 40px 8px 12px;margin: 0 !important;font-family: 'Muli',sans-serif;}
  h3.ske_tog_title.active{ border-radius:2px 2px 0 0;background:url("../images/minus.png") no-repeat scroll 99% center #FFFFFF;border-bottom:0 none;}
-div.ske_tog_content{border: 1px solid #DDDDDD;border-top:none;border-radius: 0 0 2px 2px;color:#666;  background: none repeat scroll 0 0 #FFFFFF; color: #666666; padding: 0 12px 12px; text-align: justify;} 	
+div.ske_tog_content{border: 1px solid rgba(127,191,0,.2);border-top:none;border-radius: 0 0 2px 2px;color:#666;  background: none repeat scroll 0 0 #FFFFFF; color: #666666; padding: 0 12px 12px; text-align: justify;} 	
 	
 /*-- SKETCH ACCORDIAN STYLEDIV.SKE_ACC_SET
 ------------------------------------------*/
 .sketch_container2{width:486px;}
 div.ske_acc_title i{ color:#FC0 } 
-div.ske_acc_title{background: url("../images/home/plus.png") no-repeat scroll 99% center #FBFBFB; border-bottom: 1px solid #FFFFFF; color: #43b757; cursor: pointer; font-size: 14px; padding: 10px 30px 10px 10px;} 	
-div.ske_acc_title.active{border-radius:2px 2px 0 0;background:url("../images/home/minus.png") no-repeat scroll 99% center #FFFFFF; }
-div.ske_acc_set{border: 1px solid #DDDDDD;margin-bottom: 10px;border-radius:2px;}
-div.ske_acc_content{ background: none repeat scroll 0 0 #FFFFFF; color: #999999; display: none; padding: 0 12px 12px;} 	
+div.ske_acc_title{background: url("../images/home/plus.png") no-repeat scroll 99% center #FBFBFB; border-bottom: 1px solid #FFFFFF; color: #43b757; cursor: pointer; font-size: 16px; padding: 10px 30px 10px 10px;} 	
+div.ske_acc_title.active{border-radius:2px 2px 0 0;background:url("../images/home/minus.png") no-repeat scroll 99% center #FFFFFF; font-size:24px; }
+div.ske_acc_set{border: 1px solid rgba(127,191,0,.2);margin-bottom: 10px;border-radius:2px;}
+div.ske_acc_content{ background: none repeat scroll 0 0 #FFFFFF; color: #333333; display: none; padding: 0 12px 12px; font-size:20px; font-style: italic;} 	
 .page-container iframe { max-width:100%; overflow: hidden;}
 
 /*-- SKETCH HIGHLIGHTED STYLE
@@ -260,7 +260,7 @@ div.ske_acc_content{ background: none repeat scroll 0 0 #FFFFFF; color: #999999;
 .task .icon {  width: 14px;  left: 16px;  top: 16px;  background-position: 0 -135px  }
 .task .close-notification { background-position: 0 -48px  }
 /* View source */
-.short-code {  background: none repeat scroll 0 0 #F5F5F5; border: 1px solid #DDDDDD; color: #666666; display: inline-block; margin-top: 11px; padding: 7px; text-align: left; word-wrap: break-word;box-sizing:border-box; -moz-box-sizing:border-box; word-wrap: break-word; } 
+.short-code {  background: none repeat scroll 0 0 #F5F5F5; border: 1px solid rgba(127,191,0,.2); color: #666666; display: inline-block; margin-top: 11px; padding: 7px; text-align: left; word-wrap: break-word;box-sizing:border-box; -moz-box-sizing:border-box; word-wrap: break-word; } 
 .short-code .short-code-color{color:#2980b9;}
 .head-space{margin-bottom:40px;}
 

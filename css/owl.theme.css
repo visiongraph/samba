@@ -20,7 +20,7 @@
     margin: 0;
     padding: 3px 10px;
     position: relative;
-    text-indent: -999999px;
+    text-indent: -333333px;
 }
 #our-menu-items .owl-prev {
     right: 17%;
@@ -55,7 +55,7 @@
     margin: 0;
     padding: 3px 10px;
     position: relative;
-    text-indent: -999999px;
+    text-indent: -333333px;
 }
 #full-review-box .owl-prev {
     right: 23%;
@@ -89,7 +89,7 @@
     margin: 0;
     padding: 3px 10px;
     position: relative;
-    text-indent: -999999px;
+    text-indent: -333333px;
 }
 #skt-menu-items .owl-prev {
     right: 23%;

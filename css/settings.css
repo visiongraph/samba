@@ -589,11 +589,11 @@ img.tp-slider-alternative-image	{
 
 /* REV BUTTONS MEDIUM */
 .rev-btn.rev-medium,
-.rev-btn.rev-medium:visited				{	 line-height: 36px; font-size: 14px; padding: 10px 30px; }
+.rev-btn.rev-medium:visited				{	 line-height: 36px; font-size: 16px; padding: 10px 30px; }
 
-.rev-btn.rev-medium.rev-withicon i		{ 	font-size: 14px; top: 0px; }
+.rev-btn.rev-medium.rev-withicon i		{ 	font-size: 16px; top: 0px; }
 
-.rev-btn.rev-medium.rev-hiddenicon i	{ 	font-size: 14px; top: 0px; }
+.rev-btn.rev-medium.rev-hiddenicon i	{ 	font-size: 16px; top: 0px; }
 
 
 /* REV BUTTONS SMALL */

@@ -127,7 +127,7 @@ div.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}
 .pp_social .facebook{float:left;margin-left:5px;width:55px;overflow:hidden}
 .pp_social .twitter{float:left}
 .pp_nav{clear:right;float:left;margin:-2px 10px 0 0}
-.pp_nav p{color: #333333; float: left; font-family: muli; left: -2px; margin: 2px 4px; position: relative; top: -3px; white-space: nowrap;} 	
+.pp_nav p{color: #2d2a6b; float: left; font-family: muli; left: -2px; margin: 2px 4px; position: relative; top: -3px; white-space: nowrap;} 	
 .pp_nav .pp_play,.pp_nav .pp_pause{float:left;  margin-right: 10px;margin-top: 3px;text-indent:-10000px}
 a.pp_arrow_previous,a.pp_arrow_next{display:block;float:left;height:15px;margin-top:3px;overflow:hidden;text-indent:-10000px;width:14px}
 .pp_hoverContainer{position:absolute;top:0;width:100%;z-index:2000}

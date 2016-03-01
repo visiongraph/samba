@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>jQuery StackingSlides Plugin Demo</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<link rel="stylesheet" href="stylesheets/base.css" />
+	<link rel="stylesheet" href="stylesheets/layout.css" />
+	<link rel="stylesheet" href="stylesheets/shi_default.min.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('.slide').each(function(){
+				if ($(this).index() > 0){
+					$(this).css({"position":"absolute", "top":$(this).index() * 100 + "vh"});
+				}
+			});
+			
+			$('.vcenter').each(function(){
+				$(this).css({"margin-top":(($(this).parent().height() - $(this).height())/2)});
+			});
+			
+			$(window).scroll(function() {
+				var window_pos = window.pageYOffset;
+				$('.slide').each(function(){
+				
+				//Set the fixed position on slides when we scroll past them.
+				if ($(this).index() > 0){
+					$(this).css({"position":"absolute", "top":$(this).index() * 100 + "vh"});
+					if(window_pos > $(this).offset().top) {
+					   $(this).css({"position":"fixed", "top":"0"});
+					}
+				}
+				});
+			});
+		});
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+	<div class="container">	
+		<div id="one" class="slide">
+			<div class="content vcenter">
+				<span class="bigText">These slides will stack <b>on top of each other.</b></span>
+                <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+			</div>
+		</div>
+		
+		<div id="two" class="slide gray">
+			<div class="content vcenter">
+				<span class="bigText">Creating a really <b>nice effect</b> with jQuery</span>
+			</div>
+		</div>
+		
+		<div id="three" class="slide gray">
+			<div class="content vcenter">
+				<span class="bigText">You can have as many <b>slides</b></span>
+				<span class="bigText">as you want</span>
+			</div>
+		</div>
+		
+		<div id="four" class="slide">
+			<div class="content vcenter">
+				<span class="bigText">Code Sample</span>
+				
+				<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_javascript_dom snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_symbol">&lt;</span>script type<span class="sh_symbol">=</span><span class="sh_string">"text/javascript"</span><span class="sh_symbol">&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<span class="sh_symbol">(</span><span class="sh_string">'.slide'</span><span class="sh_symbol">).</span><span class="sh_function">each</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> <span class="sh_symbol">(</span>$<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">index</span><span class="sh_symbol">()</span> <span class="sh_symbol">&gt;</span> <span class="sh_number">0</span><span class="sh_symbol">)</span><span class="sh_cbracket">{</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">css</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span><span class="sh_string">"position"</span><span class="sh_symbol">:</span><span class="sh_string">"absolute"</span><span class="sh_symbol">,</span> <span class="sh_string">"top"</span><span class="sh_symbol">:</span>$<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">index</span><span class="sh_symbol">()</span> <span class="sh_symbol">*</span> <span class="sh_number">100</span> <span class="sh_symbol">+</span> <span class="sh_string">"vh"</span><span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_cbracket">}</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<span class="sh_symbol">(</span><span class="sh_predef_var">window</span><span class="sh_symbol">).</span><span class="sh_predef_func">scroll</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span> <span class="sh_cbracket">{</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">var</span> window_pos <span class="sh_symbol">=</span> <span class="sh_predef_var">window</span><span class="sh_symbol">.</span><span class="sh_predef_var">pageYOffset</span><span class="sh_symbol">;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<span class="sh_symbol">(</span><span class="sh_string">'.slide'</span><span class="sh_symbol">).</span><span class="sh_function">each</span><span class="sh_symbol">(</span><span class="sh_keyword">function</span><span class="sh_symbol">()</span><span class="sh_cbracket">{</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">//Set the fixed position on slides when we scroll past them.</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> <span class="sh_symbol">(</span>$<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">index</span><span class="sh_symbol">()</span> <span class="sh_symbol">&gt;</span> <span class="sh_number">0</span><span class="sh_symbol">)</span><span class="sh_cbracket">{</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">css</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span><span class="sh_string">"position"</span><span class="sh_symbol">:</span><span class="sh_string">"absolute"</span><span class="sh_symbol">,</span> <span class="sh_string">"top"</span><span class="sh_symbol">:</span>$<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">index</span><span class="sh_symbol">()</span> <span class="sh_symbol">*</span> <span class="sh_number">100</span> <span class="sh_symbol">+</span> <span class="sh_string">"vh"</span><span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span><span class="sh_symbol">(</span>window_pos <span class="sh_symbol">&gt;</span> $<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">offset</span><span class="sh_symbol">().</span><span class="sh_predef_var">top</span><span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   $<span class="sh_symbol">(</span><span class="sh_keyword">this</span><span class="sh_symbol">).</span><span class="sh_function">css</span><span class="sh_symbol">(</span><span class="sh_cbracket">{</span><span class="sh_string">"position"</span><span class="sh_symbol">:</span><span class="sh_string">"fixed"</span><span class="sh_symbol">,</span> <span class="sh_string">"top"</span><span class="sh_symbol">:</span><span class="sh_string">"0"</span><span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_cbracket">}</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_cbracket">}</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_cbracket">}</span><span class="sh_symbol">);</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_symbol">&lt;/</span>script<span class="sh_symbol">&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;script type="text/javascript"&gt;
+		$(function() {
+			$('.slide').each(function(){
+				if ($(this).index() &gt; 0){
+					$(this).css({"position":"absolute", "top":$(this).index() * 100 + "vh"});
+				}
+			});
+			
+			$(window).scroll(function() {
+				var window_pos = window.pageYOffset;
+				$('.slide').each(function(){
+				
+				//Set the fixed position on slides when we scroll past them.
+				if ($(this).index() &gt; 0){
+					$(this).css({"position":"absolute", "top":$(this).index() * 100 + "vh"});
+					if(window_pos &gt; $(this).offset().top) {
+					   $(this).css({"position":"fixed", "top":"0"});
+					}
+				}
+				});
+			});
+		});
+	&lt;/script&gt;</pre></div></div>
+				
+	<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"one"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"slide"</span><span class="sh_keyword">&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"content "</span><span class="sh_keyword">&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;span</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"bigText"</span><span class="sh_keyword">&gt;</span>These slides will stack <span class="sh_keyword">&lt;b&gt;</span>on top of each other.<span class="sh_keyword">&lt;/b&gt;&lt;/span&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;/div&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;/div&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;div</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"two"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"slide gray"</span><span class="sh_keyword">&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"content "</span><span class="sh_keyword">&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;span</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"bigText"</span><span class="sh_keyword">&gt;</span>Creating a really <span class="sh_keyword">&lt;b&gt;</span>nice effect<span class="sh_keyword">&lt;/b&gt;&lt;/span&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;/div&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;/div&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;div</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"three"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"slide gray"</span><span class="sh_keyword">&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"content "</span><span class="sh_keyword">&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;span</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"bigText"</span><span class="sh_keyword">&gt;</span>You can have as many <span class="sh_keyword">&lt;b&gt;</span>slides<span class="sh_keyword">&lt;/b&gt;&lt;/span&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;span</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"bigText"</span><span class="sh_keyword">&gt;</span>as you want<span class="sh_keyword">&lt;/span&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;/div&gt;</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">&lt;/div&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;div id="one" class="slide"&gt;
+			&lt;div class="content"&gt;
+				&lt;span class="bigText"&gt;These slides will stack &lt;b&gt;on top of each other.&lt;/b&gt;&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;div id="two" class="slide gray"&gt;
+			&lt;div class="content"&gt;
+				&lt;span class="bigText"&gt;Creating a really &lt;b&gt;nice effect&lt;/b&gt;&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;div id="three" class="slide gray"&gt;
+			&lt;div class="content"&gt;
+				&lt;span class="bigText"&gt;You can have as many &lt;b&gt;slides&lt;/b&gt;&lt;/span&gt;
+				&lt;span class="bigText"&gt;as you want&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;</pre></div></div>
+				
+			</div>
+		</div>
+		
+	</div>
+	<script src="scripts/shi_jquery.min.js"></script>
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
