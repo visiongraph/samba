@@ -27,7 +27,41 @@
 	
 		$mail->Subject = 'Get a Quote Form';
 				
-		$body = sprintf($body,$_POST['nombre'],$_POST['email'],$_POST['mensaje']);
+		$body = sprintf($body,
+						$_POST['name'],
+						$_POST['company_name'],
+						$_POST['company_address'],
+						$_POST['email'],
+						$_POST['phone'],
+						$_POST['date_event'],
+						$_POST['type_event'],
+						$_POST['name_venue'],
+						$_POST['address_venue'],
+						$_POST['number_guests'],
+						$_POST['happy_percussionists'],
+						$_POST['happy_capoeira'],
+						$_POST['samba_sensation'],
+						$_POST['samba_sensation_capoeira'],
+						$_POST['super_percussionists'],
+						$_POST['super_dancers'],
+						$_POST['super_capoeira'],
+						$_POST['carnaval_percussionists'],
+						$_POST['carnaval_dancers'],
+						$_POST['carnaval_capoeira'],
+						$_POST['rootsy_additional_percussionists'],
+						$_POST['rootsy_dancers'],
+						$_POST['smooth_dancers'],
+						$_POST['school_additional_dancers'],
+						$_POST['school_additional_percussionists'],
+						$_POST['school_capoeira'],
+						$_POST['team_additional_dancers'],
+						$_POST['team_additional_percussionists'],
+						$_POST['team_capoeira'],
+						$_POST['other_show'],
+						$_POST['other_show_specify'],
+						$_POST['check_add_photographer'],
+						$_POST['check_add_videographer'],
+						$_POST['additional_requests']);
 		$mail->Body = $body;
 		
 		if(!$mail->Send()) {
