@@ -1,50 +1,3 @@
-<!--
-name
-company_name
-company_address
-email
-phone
-date_event
-type_event
-name_venue
-address_venue
-number_guests
-
-happypercussionists
-happycapoeira
-
-samba_sensation
-samba_sensation_capoeira
-
-super_percussionists
-super_dancers
-super_capoeira
-
-carnaval_percussionists
-carnaval_dancers
-carnaval_capoeira
-
-rootsy_additional_percussionists
-rootsy_dancers
-
-smooth_dancers
-
-school_additional_dancers
-school_additional_percussionists
-school_capoeira
-
-team_additional_dancers
-team_additional_percussionists
-team_capoeira
-
-other_show
-other_show_specify
-
-check_add_photographer
-check_add_videographer
-additional_requests
--->
-
 <table width="80%%" border="0" align="center" cellpadding="2" cellspacing="0">
 	<tr>
 		<td><font color="#0076DA" size="5" face="Arial, Helvetica, sans-serif">Form Get a Quote</font></td>
@@ -61,19 +14,193 @@ additional_requests
 					<td width=561><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
 				</tr>
 				<tr bgcolor="#CBE0F2"> 
-					<td width=188><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Name:</font></strong></td>
+					<td width=188><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Company Address:</font></strong></td>
 					<td width=561><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
 				</tr>				
 				
 				<tr bgcolor="#D6F7C3"> 
-					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Correo:</font></strong></td>
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Email:</font></strong></td>
 					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
 				</tr>
-				<tr bgcolor="#CBE0F2"> 
-					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Mensaje:</font></strong></td>
-					<td>
-						<p><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></p>
-				   </td>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Phone:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>				
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Date Event:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>				
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Type Event:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>				
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Name Venue:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>				
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Address Venue:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Number Guests:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>
+
+			<?php if ($_POST[check_happy_rhythms] == "yes") { ?>			
+				<tr bgcolor="#D6F7C3"> 
+					<td colspan="2"><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">HAPPY RHYTHMS</font></strong></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Percussionists:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Capoeira Performers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>				
+			<?php } ?>
+
+			<?php if ($_POST[check_samba_sensation] == "yes") { ?>			
+				<tr bgcolor="#D6F7C3"> 
+					<td colspan="2"><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">SAMBA SENSATION</font></strong></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Mode selected:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Capoeira Performers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>				
+			<?php } ?>			
+			
+			<?php if ($_POST[check_super_samba_sensation] == "yes") { ?>			
+				<tr bgcolor="#D6F7C3"> 
+					<td colspan="2"><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">SUPER SAMBA SENSATION</font></strong></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Percussionists:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Dancers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>	
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Capoeira Performers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>				
+			<?php } ?>
+			
+			<?php if ($_POST[check_carnaval_extravaganza] == "yes") { ?>			
+				<tr bgcolor="#D6F7C3"> 
+					<td colspan="2"><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">CARNAVAL EXTRAVAGANZA</font></strong></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Percussionists:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Dancers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>	
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Capoeira Performers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>				
+			<?php } ?>			
+
+			<?php if ($_POST[check_rootsy_rhythms] == "yes") { ?>			
+				<tr bgcolor="#D6F7C3"> 
+					<td colspan="2"><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">ROOTSY RHYTHMS</font></strong></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Additional Pagode Percussionists:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Dancers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>	
+			<?php } ?>
+			
+			<?php if ($_POST[check_smooth_samba] == "yes") { ?>			
+				<tr bgcolor="#D6F7C3"> 
+					<td colspan="2"><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">SMOOTH SAMBA</font></strong></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Dancers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>	
+			<?php } ?>			
+			
+			<?php if ($_POST[check_school] == "yes") { ?>			
+				<tr bgcolor="#D6F7C3"> 
+					<td colspan="2"><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">CARNAVAL EXTRAVAGANZA</font></strong></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Additional Percussionists:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Additional Dancers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>	
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Capoeira Performers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>				
+			<?php } ?>			
+
+			<?php if ($_POST[check_samba_team] == "yes") { ?>			
+				<tr bgcolor="#D6F7C3"> 
+					<td colspan="2"><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">SAMBA TEAM BUILDING</font></strong></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Additional Percussionists:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Additional Dancers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>	
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Capoeira Performers:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
+				</tr>				
+			<?php } ?>
+
+			<?php if ($_POST[check_other_show] == "yes") { ?>			
+				<tr bgcolor="#D6F7C3"> 
+					<td colspan="2"><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">OTHER</font></strong></td>
+				</tr>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Specify:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s %s</font></td>
+				</tr>
+			<?php } ?>				
+
+				<tr bgcolor="#D6F7C3"> 
+					<td colspan="2"><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">WANT MORE</font></strong></td>
+				</tr>
+			<?php if ($_POST[check_add_photographer] == "yes") { ?>			
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Add photographer:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Yes</font></td>
+				</tr>
+			<?php } ?>
+
+			<?php if ($_POST[check_add_videographer] == "yes") { ?>
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Add videographer:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Yes</font></td>
+				</tr>
+			<?php } ?>			
+			
+				<tr bgcolor="#D6F7C3"> 
+					<td><strong><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">Additional Requests:</font></strong></td>
+					<td><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">%s</font></td>
 				</tr>
 			</table>
 		</td>
